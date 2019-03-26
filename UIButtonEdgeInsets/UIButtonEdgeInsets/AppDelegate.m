@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  UIButtonEdgeInsets
 //
-//  Created by 全球友 on 2019/3/19.
-//  Copyright © 2019年 Jerry. All rights reserved.
-//
+// github地址:https://github.com/Jerryisme/UIButtonEdgeInsets
+// 简书地址:https://www.jianshu.com/p/cfd589b5a0d9
+// 简书个人主页:https://www.jianshu.com/u/281c41cc90bc
 
 #import "AppDelegate.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+    TestViewController *view = [[TestViewController alloc] init];
+    self.window.rootViewController = view;
     return YES;
 }
+
+    
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

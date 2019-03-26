@@ -11,6 +11,9 @@
 		4C0ED2E52240B953003D32DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0ED2E42240B953003D32DF /* Assets.xcassets */; };
 		4C0ED2E82240B953003D32DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0ED2E62240B953003D32DF /* LaunchScreen.storyboard */; };
 		4C0ED2EB2240B953003D32DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0ED2EA2240B953003D32DF /* main.m */; };
+		4CA0E5892248BC8D002194BD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E5872248BC8D002194BD /* TestViewController.m */; };
+		4CA0E58C2248CC92002194BD /* ZREdgeInsetsCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E58B2248CC92002194BD /* ZREdgeInsetsCustomerButton.m */; };
+		4CA0E5942248CEAD002194BD /* UIButton+ZREdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E5932248CEAD002194BD /* UIButton+ZREdgeInsets.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,12 @@
 		4C0ED2E72240B953003D32DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0ED2E92240B953003D32DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0ED2EA2240B953003D32DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CA0E5862248BC8D002194BD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4CA0E5872248BC8D002194BD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4CA0E58A2248CC92002194BD /* ZREdgeInsetsCustomerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZREdgeInsetsCustomerButton.h; sourceTree = "<group>"; };
+		4CA0E58B2248CC92002194BD /* ZREdgeInsetsCustomerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZREdgeInsetsCustomerButton.m; sourceTree = "<group>"; };
+		4CA0E5922248CEAD002194BD /* UIButton+ZREdgeInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZREdgeInsets.h"; sourceTree = "<group>"; };
+		4CA0E5932248CEAD002194BD /* UIButton+ZREdgeInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZREdgeInsets.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,8 @@
 		4C0ED2DA2240B952003D32DF /* UIButtonEdgeInsets */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0E5842248BC8D002194BD /* TransferAndImage */,
+				4CA0E5792248BA23002194BD /* CustomerImportClass */,
 				4C0ED2DB2240B952003D32DF /* AppDelegate.h */,
 				4C0ED2DC2240B952003D32DF /* AppDelegate.m */,
 				4C0ED2E42240B953003D32DF /* Assets.xcassets */,
@@ -61,6 +72,26 @@
 				4C0ED2EA2240B953003D32DF /* main.m */,
 			);
 			path = UIButtonEdgeInsets;
+			sourceTree = "<group>";
+		};
+		4CA0E5792248BA23002194BD /* CustomerImportClass */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0E58A2248CC92002194BD /* ZREdgeInsetsCustomerButton.h */,
+				4CA0E58B2248CC92002194BD /* ZREdgeInsetsCustomerButton.m */,
+				4CA0E5922248CEAD002194BD /* UIButton+ZREdgeInsets.h */,
+				4CA0E5932248CEAD002194BD /* UIButton+ZREdgeInsets.m */,
+			);
+			path = CustomerImportClass;
+			sourceTree = "<group>";
+		};
+		4CA0E5842248BC8D002194BD /* TransferAndImage */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0E5862248BC8D002194BD /* TestViewController.h */,
+				4CA0E5872248BC8D002194BD /* TestViewController.m */,
+			);
+			path = TransferAndImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA0E5942248CEAD002194BD /* UIButton+ZREdgeInsets.m in Sources */,
 				4C0ED2EB2240B953003D32DF /* main.m in Sources */,
 				4C0ED2DD2240B952003D32DF /* AppDelegate.m in Sources */,
+				4CA0E58C2248CC92002194BD /* ZREdgeInsetsCustomerButton.m in Sources */,
+				4CA0E5892248BC8D002194BD /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UIButtonEdgeInsets/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UIButtonEdgeInsets/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
