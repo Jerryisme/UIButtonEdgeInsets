@@ -1,5 +1,6 @@
 # UIButtonEdgeInsets
 通过调整 UIButton的imageEdgeInsets 和titleEdgeInsets属性实现图片和文字的布局
+### UIButtonEdgeInsets使用:
 此Demo中分别通过继承(ZREdgeInsetsCustomerButton)和类别(UIButton+ZREdgeInsets)两种方式来调整UIButton的imageEdgeInsets和titleEdgeInsets属性,实现文字与图片的布局.
 > ※满足UI设计即可,图片要求不可大于UIButton的Size.如果过于复杂,建议自定义UIView
 
@@ -48,7 +49,7 @@ typedef NS_ENUM(NSInteger, UIControlContentHorizontalAlignment) {
     UIControlContentHorizontalAlignmentTrailing API_AVAILABLE(ios(11.0), tvos(11.0)) = 5, // 竖直方向-尾对齐
 };
 ```
-#### UIEdgeInsets
+### UIEdgeInsets
 ```
 typedef struct UIEdgeInsets {
     CGFloat top, left, bottom, right;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
@@ -58,5 +59,5 @@ typedef struct UIEdgeInsets {
 contentVerticalAlignment---contentHorizontalAlignment---UIEdgeInsets注释写的比较清晰,直接看注释就可以啦.
 #### 最后,觉得有用记得给个喜欢❤️!非常感谢!
 
-##### github地址:https://github.com/Jerryisme/UIButtonEdgeInsets
+##### 简书地址:https://www.jianshu.com/p/cfd589b5a0d9
 ##### 简书个人主页:https://www.jianshu.com/u/281c41cc90bc
