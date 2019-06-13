@@ -57,6 +57,7 @@ typedef struct UIEdgeInsets {
 浮点型  上,  左,  下,  右;  //对每条边向内方向的偏移量，可以为正值（向内偏移）也可以为负值（向外偏移）
 ```
 contentVerticalAlignment---contentHorizontalAlignment---UIEdgeInsets注释写的比较清晰,直接看注释就可以啦.
+
 #### 最后,觉得有用记得给个star✨!非常感谢!
 
 ##### 简书地址:https://www.jianshu.com/p/cfd589b5a0d9
